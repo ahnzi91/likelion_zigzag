@@ -1,6 +1,12 @@
 /* Resets */
-body {
+body, p {
   margin: unset;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: unset;
+  font-size: unset;
+  font-weight: unset;
 }
 
 /*
@@ -35,22 +41,24 @@ body {
 .section-header {
   box-shadow: inset 0 0 4px purple;
   margin-bottom: 100px;
-
-  display: flex;
-}
-
-.section-header__title {
-  box-shadow: inset 0 0 20px orange;
-}
-
-.section-header__description {
-  box-shadow: inset 0 0 20px orangered;
-}
-
-.section-header__controls {
-  box-shadow: inset 0 0 20px dodgerblue;
 }
 
 .section-contents {
   box-shadow: inset 0 0 4px purple;
+}
+
+.title {
+  box-shadow: inset 0 0 20px gold;
+}
+
+.title-headings {
+  box-shadow: inset 0 0 20px darkcyan;
+}
+
+.title-description {
+  box-shadow: inset 0 0 20px orangered;
+}
+
+.title-controls {
+  box-shadow: inset 0 0 20px dodgerblue;
 }
