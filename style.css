@@ -61,6 +61,8 @@ h1, h2, h3, h4, h5, h6 {
   /* 내부 타이틀 텍스트 만큼 너비가 조정되게! */
   flex-basis: auto;
 
+  /* 최소 사이즈 규정 : 280px보다 더 작아지지 않게 limit 설정 */
+  min-width: 280px;
 
   /*
     color는 CSS Variable 이용 가능.
