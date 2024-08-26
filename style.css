@@ -48,13 +48,8 @@ body {
 
 /* Commons */
 .list {
-
-}
-
-.list li {
-  /* ::before로 만들어진 점과 내부 콘텐츠 가로로 분리 */
-  display: flex;
-  align-items: center;
+  /* 점의 width + 점 오른쪽에 margin-right 값을 여유 공간으로 만듦. */
+  padding-left: 24px;
 }
 
 .list li + li {
@@ -70,6 +65,9 @@ body {
   display: inline-block;
   border-radius: 50%;
   margin-right: 14px;
+
+  /* 점의 width + margin-right 만큼 왼쪽으로 이동시키는 효과 */
+  margin-left: -24px;
 
   /* li의 점이 절대 작아지지 않게 하기 위함 */
   flex-shrink: 0;
