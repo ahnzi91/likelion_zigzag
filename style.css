@@ -64,6 +64,7 @@ body {
 
   /* title 하위 가로 배치 */
   display: flex;
+  align-items: center;
 }
 
 .title-headings {
