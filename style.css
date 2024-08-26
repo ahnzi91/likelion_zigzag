@@ -183,6 +183,9 @@ body {
 
   /* absolute 된 요소의 컨테이닝 블록 */
   position: relative;
+
+  /* z-index: auto;가 아닌 값을 넣어서 .panel-cover-bg의 새로운 스태킹 컨텍스트가 되게 함 */
+  z-index: 0;
 }
 
 .panel-cover-bg {
@@ -197,6 +200,9 @@ body {
 
   /* 비율 유지를 위해 넣음 */
   object-fit: cover;
+
+  /* 스태킹 컨텍스트에서 가장 맨 밑에 배치 */
+  z-index: -1;
 }
 
 .panel-contents {
