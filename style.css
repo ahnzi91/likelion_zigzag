@@ -1,12 +1,17 @@
 /* Resets */
-body, p {
+body, p, ul {
   margin: unset;
+  padding: unset;
 }
 
 h1, h2, h3, h4, h5, h6 {
   margin: unset;
   font-size: unset;
   font-weight: unset;
+}
+
+li {
+  list-style-type: none;
 }
 
 /* Variables */
@@ -31,6 +36,11 @@ body {
   box-shadow: inset 0 0 20px blue;
   max-width: 1080px;
   margin: 0 auto;
+}
+
+.l_gap_row {
+  display: grid;
+  row-gap: 30px;
 }
 
 /* Components */
@@ -117,4 +127,8 @@ body {
 
   /* 언제나 오른쪽으로 배치 */
   margin-left: auto;
+}
+
+.panel {
+  background-color: azure;
 }
