@@ -205,6 +205,21 @@ body {
   z-index: -1;
 }
 
+.panel-cover-description {
+  /* 피그마 디자인 반영 */
+  background-color: rgb( 98 48 162 / .5 );
+  color: var(--color-white);
+  font-size: 3.2rem;
+
+  /* 부모가 플렉스 아이템이라 height: 100%로 부모 높이 받아올 수 있음. */
+  height: 100%;
+
+  /* 하위 텍스트 가로 세로 중앙 정렬 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .panel-contents {
   box-shadow: inset 0 0 20px blue;
 
