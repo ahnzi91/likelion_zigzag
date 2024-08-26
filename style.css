@@ -135,6 +135,7 @@ body {
 .panel {
   background-color: var(--color-white);
   display: flex;
+  color: #111;
 }
 
 .panel-cover {
@@ -160,5 +161,14 @@ body {
     min-width: auto; -> 내부 콘텐츠 크기로 min-width가 강제로 설정된다.
   */
   min-width: 0;
+
+  padding: 16px 22px 22px;
+}
+
+.panel-title {
+  color: #6230A2;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 14px;
 }
 
