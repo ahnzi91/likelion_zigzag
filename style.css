@@ -48,7 +48,31 @@ body {
 
 /* Commons */
 .list {
-  
+
+}
+
+.list li {
+  /* ::before로 만들어진 점과 내부 콘텐츠 가로로 분리 */
+  display: flex;
+  align-items: center;
+}
+
+.list li + li {
+  margin-top: 12px;
+}
+
+.list li::before {
+  content: '';
+  background-color: #C89DFF;
+  width: 10px;
+  height: 10px;
+
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 14px;
+
+  /* li의 점이 절대 작아지지 않게 하기 위함 */
+  flex-shrink: 0;
 }
 
 /* Components */
