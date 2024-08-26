@@ -92,6 +92,23 @@ body {
   /* 가장 많은 텍스트가 추가 될 가능성이 있음. 가장 넓은 영역으로 잡음. 커질 수 있는 크기 제한을 검*/
   flex-grow: 1;
   max-width: 582px; /* 피그마에서 온 사이즈 */
+
+
+  /* 하위 요소를 Flex Items로 만든다! */
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+/* 가상 요소는 하위 요소로 생성된다. 즉, Flex Items가 될 수 있다. */
+.title-description::before {
+  content: ' ';
+  background-color: currentColor;
+  width: 90px;
+  height: 1px;
+
+  /* flex-shrink: 1; (초기값). 오른쪽 텍스트에 의해 width: 90px이 유지되지 못하고 수축 될 수 있다. 고로 flex-shrink: 0;으로 지정 -> 언제나 90px이 보장되게 할 수 있다. */
+  flex-shrink: 0;
 }
 
 .title-controls {
