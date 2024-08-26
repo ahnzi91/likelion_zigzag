@@ -14,6 +14,11 @@ li {
   list-style-type: none;
 }
 
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
 /* Variables */
 :root {
   /* Colors */
@@ -175,9 +180,24 @@ body {
 
   /* 고정 너비 */
   width: 280px; /* flex-basis: auto가 280px로 계산 됨. 또한 min-width: auto가 280px로 계산된다. */
+
+  /* absolute 된 요소의 컨테이닝 블록 */
+  position: relative;
 }
 
-.pa
+.panel-cover-bg {
+  /* 상위 요소 중에 position: relative; 기준 */
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  /* 컨테이닝 블록 기준으로 무조건 가득 채움 */
+  width: 100%;
+  height: 100%;
+
+  /* 비율 유지를 위해 넣음 */
+  object-fit: cover;
+}
 
 .panel-contents {
   box-shadow: inset 0 0 20px blue;
