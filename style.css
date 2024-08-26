@@ -73,6 +73,10 @@ body {
   flex-shrink: 0;
 }
 
+.list.type_square li::before {
+  border-radius: 0;
+}
+
 /* Components */
 /* 시각적으로 보여지는 공통 분모 -> 템플릿 구성 */
 .section {
