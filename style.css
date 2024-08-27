@@ -19,7 +19,10 @@ img {
   vertical-align: top;
 }
 
-
+button {
+  all: unset;
+  display: inline-block;
+}
 
 /* Variables */
 :root {
@@ -82,6 +85,18 @@ body {
 
 .list.type_square li::before {
   border-radius: 0;
+}
+
+.button {
+  background-color: orangered;
+  color: var(--color-white);
+  height: 48px;
+  line-height: 48px;
+  padding: 0 14px;
+  border-radius: 4px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  box-shadow: inset 0 -4px 0 0 rgb( 0 0 0 / .1 );
 }
 
 /* Components */
