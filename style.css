@@ -56,6 +56,12 @@ body {
   grid-auto-columns: minmax( 0, 1fr );
 }
 
+.l_grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat( auto-fit, minmax( 320px, 1fr ) );
+}
+
 /* Commons */
 .list {
   /* 점의 width + 점 오른쪽에 margin-right 값을 여유 공간으로 만듦. */
@@ -121,7 +127,7 @@ body {
 }
 
 .section-contents {
-
+  box-shadow: inset 0 0 20px purple;
 }
 
 .title {
@@ -282,19 +288,45 @@ body {
   margin-bottom: 14px;
 }
 
+.card {
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+}
+
+.card-cover {
+  box-shadow: inset 0 0 20px red;
+}
+
+.card-main {
+  box-shadow: inset 0 0 20px blue;
+  flex-grow: 1;
+}
+
+.card-footer {
+  box-shadow: inset 0 0 20px yellow;
+}
+
 @media ( max-width: 768px ) {
   .title {
     display: block;
     text-align: center;
   }
+
   .title-description {
     display: block;
     max-width: 320px;
     margin: 40px auto;
   }
+
+  .title-controls {
+    margin: 40px 0;
+  }
+
   .panel {
     display: block;
   }
+
   .panel-cover {
     width: unset;
     aspect-ratio: 12 / 8;
